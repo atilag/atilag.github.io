@@ -3,10 +3,9 @@ $('#scanButton').on('click', function (e) {
 		filters: [{
 			services: [0xFEAA]
 		}]
+	}).then( device => {
+
+	}).catch( error => { 
+		console.error(); 
 	});
-
-}).then( device => {
-
-}).catch( error => { 
-	console.error(); 
 });
