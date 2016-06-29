@@ -4,8 +4,9 @@ $('#scanButton').on('click', function (e) {
 			services: [0xFEAA]
 		}]
 	}).then( device => {
+		console.log(device);
 
 	}).catch( error => { 
-		console.error(); 
+		console.error(error); 
 	});
 });
